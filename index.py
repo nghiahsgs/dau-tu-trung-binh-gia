@@ -1,14 +1,16 @@
 import pandas as pd
+import datetime
 import matplotlib.pyplot as plt
 
-# folder_save = "BTC"
-folder_save = "GOLD"
+
+folder_save = "BTC"
+# folder_save = "GOLD"
 file_csv = '%s.csv'%folder_save
 
 df = pd.read_csv(file_csv)
-
-
 df.Date =  pd.to_datetime(df.Date)
+
+
 
 
 usd_bank = 0
